@@ -1,0 +1,9 @@
+spring:
+  mail:
+    host: smtp.qq.com
+    port: 465
+    username: 909610728@qq.com
+    password: vsxkneefosyrbcda
+    default-encoding: UTF-8
+    protocol: smtps
+

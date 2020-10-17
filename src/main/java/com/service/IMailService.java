@@ -1,4 +1,4 @@
-package com.sendemail.service;
+package com.service;
 
 import javax.mail.MessagingException;
 

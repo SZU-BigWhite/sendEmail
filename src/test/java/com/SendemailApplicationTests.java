@@ -1,4 +1,4 @@
-package com.sendemail;
+package com;
 
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;

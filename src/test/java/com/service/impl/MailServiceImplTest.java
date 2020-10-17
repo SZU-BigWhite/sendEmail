@@ -1,14 +1,12 @@
-package com.sendemail.service.impl;
+package com.service.impl;
 
-import com.sendemail.SendemailApplicationTests;
+import com.SendemailApplicationTests;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 
 import javax.mail.MessagingException;
-
-import static org.junit.Assert.*;
 
 public class MailServiceImplTest extends SendemailApplicationTests {
 

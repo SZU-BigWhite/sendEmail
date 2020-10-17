@@ -22,6 +22,7 @@ public class MailServiceImpl implements IMailService {
     @Autowired
     JavaMailSender mailSender;
 
+
     @Override
     public void sendEmail(String to, String subject, String content) {
         SimpleMailMessage mailMessage=new SimpleMailMessage();

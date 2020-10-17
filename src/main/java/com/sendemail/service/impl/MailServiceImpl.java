@@ -22,7 +22,7 @@ public class MailServiceImpl implements IMailService {
     @Autowired
     JavaMailSender mailSender;
 
-
+    //发送普通类型邮件
     @Override
     public void sendEmail(String to, String subject, String content) {
         SimpleMailMessage mailMessage=new SimpleMailMessage();
@@ -35,6 +35,7 @@ public class MailServiceImpl implements IMailService {
         mailSender.send(mailMessage);
     }
 
+    //发送html类型邮件
     @Override
     public void sendHtmlEmail(String to, String subject, String content) throws MessagingException {
         MimeMessage mimeMessage=mailSender.createMimeMessage();
@@ -47,6 +48,7 @@ public class MailServiceImpl implements IMailService {
         mailSender.send(mimeMessage);
     }
 
+    //发送带附件类型邮件
     @Override
     public void sendAttachEmail(String to, String subject, String content,String filePath) throws MessagingException {
         MimeMessage mimeMessage=mailSender.createMimeMessage();
